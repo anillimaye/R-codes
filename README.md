@@ -3,4 +3,4 @@ Codes used for routine statistical analysis and data plotting
 
 ## Contents
 
-Noting as of now
+1. [Z-Test](./ZTest)
