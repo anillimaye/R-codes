@@ -3,4 +3,4 @@ R-Codes for different types of Z-Tests
 
 ## Contents
 
-1. Single Sample
+1. [Single Sample](./SingleSample)
