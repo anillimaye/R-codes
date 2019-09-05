@@ -23,7 +23,7 @@ mai <- 10; vai <- 1; mbi <- 2; vbi <- 0.5; meana[1,] <- mai; meanb[1,] <- mbi
 vara[1,] <- vai; varb[1,] <- vbi
 priora <- 0.5; priorb <- 0.5
 
-#code
+# code for updating the means and variances in after each iteration (100 iterations, which can be changed)
 
 for (i in 1:100) {
 #posta= P(x|a)
@@ -48,6 +48,7 @@ mai <- maf; mbi <- mbf; vai <- vaf; vbi <- vbf; priora <- mean(a); priorb <- mea
 }
 SDA = sqrt(vaf); SDB = sqrt(vbf)
 
+#show results, ie the mean, variance and standard deviation of the two populations A and B
 print (paste("mean of population A:", maf))
 print (paste("variance of population A:", vaf))
 print (paste("standard deviation of population A:", SDA))
