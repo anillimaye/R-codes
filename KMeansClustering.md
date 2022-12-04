@@ -53,7 +53,8 @@ Species
 #One can look at the distances using the dist function
 distances <- dist(scaleddata)
 
-#Determine the value of K by generating the Elbow plot
+#Determine the value of K by generating the Elbow plot with the following command
 ```
 >fviz_nbclust(scaleddata, kmeans, method="wss")+labs(subtitle="Elbow Plot")
 ```
+![Elbow Plot](./ElbowPlot.png)
