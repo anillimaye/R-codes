@@ -87,3 +87,4 @@ Available components:
 [6] "betweenss"    "size"         "iter"         "ifault"      
 > 
 ```
+centers=3 in the above code stands for the fact that we have chosen to use the value of K = 3, and hence we expect three clusters as evident from the next part of the output. It turns out that the cluster sizes are 50, 53 and 47. This can be also noted in the Clustering vector shown in the above output, with 1, 2, or 3 entered for each of the samples. Note there are a total of 150 samples. The clustering vector showes that the sample number 121 is assigned to cluster 3, sample 81 is assigned in cluster 2 and so on. This clustering vector will be needed when we visualize the clusters. The clustering vector can be called by kmeans_output$cluster
