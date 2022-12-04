@@ -58,3 +58,32 @@ distances <- dist(scaleddata)
 >fviz_nbclust(scaleddata, kmeans, method="wss")+labs(subtitle="Elbow Plot")
 ```
 ![Elbow Plot](./ElbowPlot.png)
+
+Now we perform the K means clustering
+```
+> kmeans_output <- kmeans(scaleddata, centers=3, nstart=100)
+> kmeans_output
+K-means clustering with 3 clusters of sizes 50, 53, 47
+
+Cluster means:
+  Sepal.Length Sepal.Width Petal.Length Petal.Width
+1  -1.01119138  0.85041372   -1.3006301  -1.2507035
+2  -0.05005221 -0.88042696    0.3465767   0.2805873
+3   1.13217737  0.08812645    0.9928284   1.0141287
+
+Clustering vector:
+  [1] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ [41] 1 1 1 1 1 1 1 1 1 1 3 3 3 2 2 2 3 2 2 2 2 2 2 2 2 3 2 2 2 2 3 2 2 2 2 3 3 3 2 2
+ [81] 2 2 2 2 2 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 3 2 3 3 3 3 2 3 3 3 3 3 3 2 2 3 3 3 3 2
+[121] 3 2 3 2 3 3 2 3 3 3 3 3 3 2 2 3 3 3 2 3 3 3 2 3 3 3 2 3 3 2
+
+Within cluster sum of squares by cluster:
+[1] 47.35062 44.08754 47.45019
+ (between_SS / total_SS =  76.7 %)
+
+Available components:
+
+[1] "cluster"      "centers"      "totss"        "withinss"     "tot.withinss"
+[6] "betweenss"    "size"         "iter"         "ifault"      
+> 
+```
